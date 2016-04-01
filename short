@@ -4,6 +4,8 @@ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && \. "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
 
+git clone https://github.com/honu12/depot.git
+
 rvm install 1.9.3
 
 rvm use 1.9.3
@@ -19,5 +21,6 @@ rails _3.2.0_ --version
 rails server -b $IP -p $PORT
 
 rvm --default 1.9.3
+
 
 
